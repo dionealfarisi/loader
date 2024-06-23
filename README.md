@@ -26,6 +26,32 @@ Loader Script adalah sebuah skrip Python yang menyediakan berbagai metode untuk 
 4. Pilih metode loading yang ingin kamu gunakan dari daftar yang disediakan.
 5. Amati progress loading yang ditampilkan sesuai dengan metode yang kamu pilih.
 
+## Penggunaan Loader
+
+Berikut adalah contoh penggunaan Loader dalam skrip Python:
+
+```python
+from Loader.load import Loader
+
+loader_methods = ["tqdm", "progressbar2", "alive_progress", "rich", "halo", "progress", "click", "yaspin"]
+
+for method in loader_methods:
+    print(f"Running loader with method: {method}")
+    loader = Loader(method=method, duration=0.05)
+    loader.start()
+    print()
+```
+
+1. **Impor Kelas Loader**: Pertama, kita mengimpor kelas `Loader` dari modul `Loader.load`. Kelas ini digunakan untuk menampilkan loading progress dengan berbagai metode.
+
+2. **Definisikan Metode Loader**: Kemudian, kita mendefinisikan daftar `loader_methods` yang berisi berbagai metode loading progress yang ingin diuji. Metode yang dimasukkan ke dalam daftar ini adalah `tqdm`, `progressbar2`, `alive_progress`, `rich`, `halo`, `progress`, `click`, dan `yaspin`.
+
+3. **Loop Melalui Metode Loader**: Selanjutnya, kita melakukan iterasi melalui daftar `loader_methods` dan menjalankan Loader dengan setiap metode. Pada setiap iterasi, kita mencetak pesan yang menunjukkan metode loader yang sedang dijalankan, membuat instance Loader dengan metode tersebut, dan memulai loader dengan menggunakan metode `start()`.
+
+4. **Menambahkan Durasi Loader**: Ada juga parameter opsional `duration` yang diberikan pada setiap instance Loader. Parameter ini menentukan durasi (dalam detik) untuk menampilkan setiap iterasi loading. Dalam contoh tersebut, durasi ditetapkan sebagai `0.05` detik.
+
+Dengan cara ini, skrip tersebut akan menjalankan Loader dengan berbagai metode yang disediakan oleh kelas `Loader` dan menampilkan loading progress untuk setiap metode tersebut. Ini memungkinkan untuk membandingkan berbagai metode dan memilih yang sesuai dengan kebutuhan spesifik kamu dalam proyek kamu.
+
 ## Kontribusi
 Kontribusi dalam bentuk laporan bug, saran fitur, atau pull request sangat disambut. Untuk mengajukan kontribusi, silakan buka sebuah issue atau kirimkan pull request ke repositori ini.
 
