@@ -1,5 +1,5 @@
 # Loader Script
-
+![Gambar](https://i.ibb.co.com/Fw8fXZZ/20240623-151834.jpg)
 ## Deskripsi
 Loader Script adalah sebuah skrip Python yang menyediakan berbagai metode untuk menampilkan loading progress saat menjalankan suatu proses. Skrip ini berguna untuk memberikan feedback visual kepada pengguna saat proses yang memerlukan waktu sedang berlangsung, seperti saat membaca atau menulis data, pengolahan file, atau komputasi yang kompleks.
 
